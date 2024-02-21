@@ -1,0 +1,22 @@
+************************************************************************************
+* InputFile for MFLUX standalone model                                                 
+************************************************************************************
+6               ! Number of days to simulate
+.001              ! Timestep (d)
+10               ! Output every n timesteps
+4               ! Number of layers
+.3              ! Tp (cm/d) - or <0 to use external Tp-value file MFluxTpData.dat
+1.03d-4         ! Longitudinal conductance between leaf and root xylem
+3.5d-6          ! Radial root conductivity (cm/d)
+0.02            ! Xylem radius (cm)
+0.05            ! Root radius (cm)
+-20000.0         ! Minimum leaf water potential (cm)
+*
+* For each layer: thickness (cm), Root Length Density (cm/cm3), six VGM parameters ThetaR, ThetaS, Alpha (1/cm), n, l, Ks (cm/d), and initial water content (+) or pressure head (-)
+25   0.01    0.091  0.375  0.012  1.31  0.500   9.25  -91
+20   0.01    0.084  0.411  0.019  1.49  0.500  58.7   -891
+20   0.01   0.062  0.340  0.013  1.41  0.500  17.4   -831
+20   0.01   0.080  0.369  0.012  1.36  0.500  13.1    -831
+
+
+ 
